@@ -163,6 +163,8 @@ class Qobj():
             else:
                 self.shape = shape
 
+            self.type = inpt.type
+
         else:
             # if input is int, float, or complex then convert to array
             if isinstance(inpt, (int, float, complex, np.int64)):
