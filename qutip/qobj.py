@@ -1491,7 +1491,7 @@ def shape(inpt):
 
     """
     if isinstance(inpt, Qobj):
-        return Qobj.shape
+        return inpt.shape
     else:
         return np.shape(inpt)
 
